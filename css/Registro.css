@@ -61,7 +61,7 @@ nav li a
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    border-radius: 60px;
+    border-radius: 10px;
     transition: all .3s;
 }
 
@@ -150,7 +150,7 @@ section
 
 footer
 {
-    margin-top: 600px;
+    margin-top: 620px;
     text-align: center;
     clear: both;
     padding: 35px;
@@ -187,9 +187,9 @@ footer
 {
     border-radius: 20px;
     width: 700px;
-    height: 400px;
+    height: 550px;
     position: absolute;
-    top: 47%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgb(245, 245, 245);   
@@ -268,8 +268,9 @@ footer
 
 .text
 {
+    font-family: 'Nunito', sans-serif;
     padding-bottom: 60px;
-    color: rgb(77, 80, 233);
+    color: rgb(233, 82, 77);
 }
 
 @media only screen and (max-width: 1380px) 
