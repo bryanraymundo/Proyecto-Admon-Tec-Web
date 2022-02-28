@@ -1,10 +1,10 @@
 <?php
-
 include("credentials.php");
 
 $nombre = $_POST["user"];
 $pass = $_POST["contrasena"];
-$email = $_POST["correo"];
+
+
 //
 if (isset($_POST["btnSumit"]))
 {
@@ -12,23 +12,37 @@ if (isset($_POST["btnSumit"]))
     $ok = mysqli_num_rows($query);
     if ($ok == 1)
     { 
-        echo "<script> alert("¡Bienvenido $nombre!") window.location = 'Dashboard.html'</script>";
+        include("Dashboard.html");
+        header("location:/Dashboard.html");
     }else
     {
-        echo "<h1>Error de credenciales</h1>";
+        echo "<div style='left: 34%;
+        top: 8%;
+        position: absolute;
+        background-color: brown;
+        color: aliceblue;
+        text-align: center;
+        height: 75px;
+        width: 500px;
+        padding-top: 5px;
+        padding-bottom: 13px;'>
+             <h1>Error de credenciales</h1>        
+              </div>";
     }
 }
 
 if (isset($_POST["btnSumitRegistro"]))
 {
+    $email = $_POST["correo"];
+
     $insert = "INSERT INTO usuario(full_name, password, email) VALUES ('$nombre','$pass','$email')";
 
     if (mysqli_query($conexion, $insert))
     {
-        echo echo "<script> alert("¡Registro exitoso!") window.location = 'index.html'</script>";
+        echo "Registro Exitoso";
     }else
     {
         echo "Error: ".$sql."<br>".mysql_error($conexion);
     }
-
+}
 ?>

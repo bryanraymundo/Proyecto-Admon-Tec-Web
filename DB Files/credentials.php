@@ -8,7 +8,7 @@ $conexion = mysqli_connect ($dbhost,$dbuser,$dbpass,$dbname);
 
 if (!$conexion)
 {
-    die("Ocurrió un error").mysqli_connect_error());
+    die("Ocurrió un error").mysqli_connect_error();
 }
 
 ?>

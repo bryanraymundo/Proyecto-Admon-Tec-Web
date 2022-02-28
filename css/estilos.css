@@ -150,11 +150,14 @@ section
 
 footer
 {
-    margin-top: 600px;
+    position: relative;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 695px;
     text-align: center;
     clear: both;
     padding: 35px;
-    background-color: rgb(219, 219, 219);
+    background-color: #287db5;
 }
 
 .contenedor
@@ -209,7 +212,7 @@ footer
     width: 530px;
     outline: none;
     color: #145e8f;
-    border-radius: 10px;
+    border-radius: 60px;
     box-shadow:inset 0 -3em 3em rgba(156, 156, 156, 0.055), 
                     0.3em 0.3em 1em rgba(0, 0, 0, 0.102);
 }
@@ -226,7 +229,7 @@ footer
     width: 530px;
     outline: none;
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 60px;
     box-shadow:inset 0 -3em 3em rgba(156, 156, 156, 0.055), 
                     0.3em 0.3em 1em rgba(0, 0, 0, 0.102);
 }
@@ -268,8 +271,9 @@ footer
 
 .text
 {
+    font-family: 'Nunito', sans-serif;
     padding-bottom: 60px;
-    color: rgb(77, 80, 233);
+    color: rgb(100, 100, 100);
 }
 
 @media only screen and (max-width: 1380px) 
