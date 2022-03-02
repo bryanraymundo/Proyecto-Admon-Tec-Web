@@ -1,10 +1,10 @@
 <?php
-$dbhost = "localhost:3306";
+$dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "redmi";
+$dbpass = "";
 $dbname = "login";
 
-$conexion = mysqli_connect ($dbhost,$dbuser,$dbpass,$dbname);
+$conexion = mysqli_connect ($dbhost,$dbuser,$dbpass,$dbname);  // Esta linea 
 
 if (!$conexion)
 {

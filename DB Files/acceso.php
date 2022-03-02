@@ -16,18 +16,9 @@ if (isset($_POST["btnSumit"]))
         header("location:/Dashboard.html");
     }else
     {
-        echo "<div style='left: 34%;
-        top: 8%;
-        position: absolute;
-        background-color: brown;
-        color: aliceblue;
-        text-align: center;
-        height: 75px;
-        width: 500px;
-        padding-top: 5px;
-        padding-bottom: 13px;'>
-             <h1>Error de credenciales</h1>        
-              </div>";
+        include("errorLogin.html");
+        header("location:/errorLogin.html");
+
     }
 }
 
@@ -39,7 +30,9 @@ if (isset($_POST["btnSumitRegistro"]))
 
     if (mysqli_query($conexion, $insert))
     {
-        echo "Registro Exitoso";
+        include("SuccessRegistro.html");
+        header("location:/SuccessRegistro.html");
+
     }else
     {
         echo "Error: ".$sql."<br>".mysql_error($conexion);

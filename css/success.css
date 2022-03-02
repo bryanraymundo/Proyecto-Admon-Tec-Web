@@ -16,7 +16,7 @@ header
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
-    background-color: #287db5;
+    background-color: #11a311;
     height: 128px;
 }
 
@@ -57,7 +57,7 @@ nav li a
 {  
     font-family: 'Nunito', sans-serif;
     display: block;
-    color:rgb(24, 107, 161) ;
+    color:#11a311;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -65,12 +65,11 @@ nav li a
     transition: all .3s;
 }
 
-
 li a:hover
 {
     padding: 10px 30px;
     color: #fff;
-    background-color:rgb(24, 107, 161) ;
+    background-color:#11a311;
     transition-duration: .3s;
 
 }
@@ -78,7 +77,6 @@ li a:hover
 section
 {
     margin: 70px 30% 50px 30%;
-    text-align: center;
 }
 
 .rectangulo
@@ -155,12 +153,13 @@ footer
     position: relative;
     color: aliceblue;
     font-family: 'Nunito', sans-serif;
-    margin-top: 50px;
+    margin-top: 695px;
     text-align: center;
     clear: both;
     padding: 35px;
     background-color: #287db5;
 }
+
 .contenedor
 {
     padding: 60px 0;
@@ -189,18 +188,15 @@ footer
 
 .caja
 {
-    display: inline-block;
-    margin: auto;
-    min-width: 100px;
     border-radius: 20px;
     width: 700px;
-    height: 550px;
-    /*   position: absolute;
-    top: 52%;
+    height: 400px;
+    position: absolute;
+    top: 65%;
     left: 50%;
-    transform: translate(-50%,-50%);*/
-    background-color: rgb(245, 245, 245);
-    /* text-align: center; */
+    transform: translate(-50%,-50%);
+    background-color: rgb(245, 245, 245);   
+    text-align: center;
 }
 
 .caja input[type = "text"], .caja input[ type = "password"]
@@ -216,7 +212,7 @@ footer
     width: 530px;
     outline: none;
     color: #145e8f;
-    border-radius: 10px;
+    border-radius: 60px;
     box-shadow:inset 0 -3em 3em rgba(156, 156, 156, 0.055), 
                     0.3em 0.3em 1em rgba(0, 0, 0, 0.102);
 }
@@ -233,7 +229,7 @@ footer
     width: 530px;
     outline: none;
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 60px;
     box-shadow:inset 0 -3em 3em rgba(156, 156, 156, 0.055), 
                     0.3em 0.3em 1em rgba(0, 0, 0, 0.102);
 }
@@ -277,7 +273,7 @@ footer
 {
     font-family: 'Nunito', sans-serif;
     padding-bottom: 60px;
-    color: rgb(233, 82, 77);
+    color: rgb(100, 100, 100);
 }
 
 @media only screen and (max-width: 1380px) 
